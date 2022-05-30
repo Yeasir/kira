@@ -1,0 +1,196 @@
+/*============================================================================
+	#08. Header and menu style
+==============================================================================*/
+
+.site-header {
+  transition: all 0.3s ease-in-out;
+  padding: 44px 23px 44px 62px;
+  @media #{$lg-layout} {
+    padding: 44px 30px 44px 30px;
+  }
+  @media #{$xs-layout, $md-layout} {
+    padding: 40px;
+  }
+}
+.site-header__inner_header{
+  padding: 25px 23px 58px 62px;
+  background:url('#{$assetPath}/bg/inner-header-bg.png') no-repeat top center;
+  background-size: cover;
+  @media #{$lg-layout} {
+    padding: 25px 30px 58px 30px;
+  }
+  @media #{$xs-layout, $md-layout} {
+    padding: 40px;
+  }
+}
+.site-header__absolute {
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+.navbar-fixed{
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  background:url('#{$assetPath}/bg/inner-header-bg.png') no-repeat top center;
+  background-size: cover;
+  padding: 25px 23px 58px 62px;
+  z-index: 9999;
+  //background:url('#{$assetPath}/bg/inner-header-bg.png') no-repeat top center;
+  //background-size: contain;
+  @media #{$lg-layout} {
+    padding: 25px 30px 58px 30px;
+  }
+  @media #{$xs-layout, $md-layout} {
+    padding: 40px;
+  }
+}
+
+.navbar {
+ padding: 0;
+ }
+
+.mr-190{
+  margin-right: 190px;
+  @media only screen and (min-width: 1367px) and (max-width: 1440px) {
+    margin-right: 75px;
+  }
+  @media #{ $xl-layout} {
+    margin-right: 70px;
+  }
+  @media #{$lg-layout} {
+    margin-right: 10px;
+  }
+}
+.navbar-brand {
+  padding: 0;
+  //width: 140px;
+}
+
+
+.navbar-toggler {
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  outline: 0;
+  background-color: transparent !important;
+  color: $white !important;
+  border: 0;
+  margin: 0;
+  @media #{$xs-layout, $md-layout} {
+    display: none;
+  }
+  &:focus, &:active {
+    outline: 0;
+    background-color: transparent !important;
+  }
+
+  i {
+    color: $white !important;
+    font-size: 30px;
+  }
+
+  &[aria-expanded="true"] {
+    i {
+      color: $white !important;
+    }
+  }
+}
+.navbar-collapse{
+  @media #{$xs-layout, $md-layout} {
+    display: none;
+  }
+}
+.navbar-collapse.show{
+  background-color: rgba(19, 19, 20, 0.9);
+  padding: 15px;
+  z-index: 1;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 0 20px;
+  font-size: $font-20;
+  font-family: $zilla;
+  color: $white;
+  font-weight: $bold;
+  line-height: 1.4;
+  text-transform: capitalize;
+  position: relative;
+  @media #{$xl-layout} {
+    padding: 0 10px;
+  }
+  @media #{$lg-layout} {
+    padding: 0 7px;
+    font-size: $font-18;
+  }
+  @media #{$md-layout,$xs-layout} {
+    padding:10px 0;
+    font-size: $font-18;
+  }
+  &:hover {
+    color: $secondary-color;
+  }
+}
+
+.navbar-expand-lg .navbar-nav .nav-item.active .nav-link,
+.navbar-expand-lg .navbar-nav .nav-link:focus, .navbar-expand-lg .navbar-nav .nav-link:hover {
+  color: $secondary-color;
+}
+
+.dropdown > .dropdown-menu {
+  background-color: $whitesmoke;
+  display: block;
+  transition: 0.5s all ease-in;
+  transform: translateY(50px);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.dropdown:hover > .dropdown-menu {
+  transition: 0.5s all ease-in-out;
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown > .dropdown-toggle:active {
+  pointer-events: none;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+  color: $primary-color;
+  text-decoration: none;
+  background-color: $secondary-color;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  color: $primary-color;
+  text-decoration: none;
+  background-color: $secondary-color;
+}
+/*
+*
+* ==========================================
+* social Icon
+* ==========================================
+*
+*/
+.social-icon li{
+  &.list-inline-item:not(:last-child) {
+    margin-right: 15px;
+    @media #{$lg-layout, $md-layout, $xs-layout} {
+      margin-right: 10px;
+    }
+  }
+  > a {
+      font-size: $font-24;
+    }
+}

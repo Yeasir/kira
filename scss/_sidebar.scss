@@ -1,0 +1,426 @@
+/*============================================================================
+	#12.sidebar Style
+==============================================================================*/
+.subscribe-banner {
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+
+  h3 {
+    color: $white;
+
+    span {
+      margin-top: 5px;
+      font-size: 12px;
+    }
+  }
+
+  p {
+    color: $gray;
+  }
+
+  figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-bottom: 50px;
+    z-index: 1;
+  }
+
+  .btn {
+    background-color: $secondary-color;
+    color: $white;
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+  .overlay {
+    background-image: -moz-linear-gradient(90deg, rgb(27, 28, 30) 0%, rgba(27, 28, 30, 0.29) 71%, rgba(27, 28, 30, 0) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(27, 28, 30) 0%, rgba(27, 28, 30, 0.29) 71%, rgba(27, 28, 30, 0) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(27, 28, 30) 0%, rgba(27, 28, 30, 0.29) 71%, rgba(27, 28, 30, 0) 100%);
+    opacity: 0.902;
+    position: absolute;
+    bottom: 0;
+    display: block;
+    right: 0;
+    width: 100%;
+    height: 100%;
+
+    &:after {
+      content: '';
+      background-image: -moz-linear-gradient(90deg, rgb(27, 28, 30) 0%, rgba(27, 28, 30, 0.29) 71%, rgba(27, 28, 30, 0) 100%);
+      background-image: -webkit-linear-gradient(90deg, rgb(27, 28, 30) 0%, rgba(27, 28, 30, 0.29) 71%, rgba(27, 28, 30, 0) 100%);
+      background-image: -ms-linear-gradient(90deg, rgb(27, 28, 30) 0%, rgba(27, 28, 30, 0.29) 71%, rgba(27, 28, 30, 0) 100%);
+      opacity: 0.902;
+      position: absolute;
+      bottom: 0;
+      display: block;
+      right: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+  }
+}
+
+.widget-title {
+  position: relative;
+  font-size: $font-18;
+  font-family: $red-hat;
+  font-weight: $black-weight;
+  color: $primary-color;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  @media #{$md-layout} {
+    font-size: $font-size-base;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    background: url('#{$assetPath}/shape/left-arrow-widget.png') no-repeat left center;
+    background-size: auto;
+    width: 50px;
+    height: 19px;
+    bottom: 0%;
+    left: 20%;
+    @media #{$md-layout} {
+      left: 5%;
+    }
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    background: url('#{$assetPath}/shape/right-arrow-widget.png') no-repeat right center;
+    background-size: auto;
+    width: 50px;
+    height: 19px;
+    bottom: 0%;
+    right: 20%;
+    @media #{$md-layout} {
+      right: 5%;
+    }
+  }
+}
+
+.categories {
+  li {
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  li > a {
+    font-size: $font-size-base;
+    font-family: $red-hat;
+    color: $primary-color;
+    text-transform: uppercase;
+    line-height: 1.2;
+
+    &:hover {
+      color: $secondary-color;
+    }
+
+  }
+}
+
+.postal-card {
+  padding: 30px;
+  position: relative;
+  background-color: #252329;
+  @media #{$md-layout, $xs-layout} {
+    padding: 20px;
+  }
+
+  p {
+    color: #b0b2bb;
+    margin-bottom: 30px;
+  }
+
+  h2, h3, h4, h5, h6 {
+    color: $white;
+    margin-bottom: 30px;
+  }
+
+  figure {
+    margin-top: -50px;
+  }
+
+  header {
+    padding: 30px 0;
+  }
+
+  .widget-title {
+    display: block;
+    color: $white;
+    position: relative;
+
+    &:hover {
+      color: $secondary-color
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      background: url('#{$assetPath}/shape/left-arrow-white.png') no-repeat left center;
+      background-size: auto;
+      width: 50px;
+      height: 19px;
+      bottom: 0%;
+      left: 10%;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      background: url('#{$assetPath}/shape/right-arrow-white.png') no-repeat right center;
+      background-size: auto;
+      width: 50px;
+      height: 19px;
+      bottom: 0%;
+      right: 10%;
+    }
+  }
+
+  .btn {
+    background-color: $secondary-color;
+    color: $white;
+    @media #{$md-layout,$xs-layout} {
+      padding: 15px 35px;
+    }
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+
+  ul.price-list, ul {
+    margin-bottom: 45px;
+    margin-top: 10px;
+
+    li > a {
+      color: #b0b2bb;
+
+      i {
+        color: $secondary-color;
+      }
+
+      &:hover {
+        color: $secondary-color;
+
+        i {
+          color: #b0b2bb;
+        }
+      }
+    }
+  }
+}
+
+.testimonial-panel {
+  background-color: #e3e7ef;
+  padding: 60px 40px;
+  @media #{$md-layout} {
+    padding: 50px 15px;
+  }
+  .widget-title {
+    position: relative;
+
+    &:before {
+      content: '';
+      left: 5%;
+    }
+
+    &:after {
+      content: '';
+      right: 5%;
+    }
+  }
+
+  .slick-slide img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  blockquote {
+    max-width: 840px;
+    margin: 0 auto;
+    color: #5d5f66;
+    font-size: $font-18+1;
+    font-family: $zilla;
+    font-style: italic;
+    line-height: 1.474;
+    text-align: center;
+
+    footer {
+      margin-top: 35px;
+
+      h6 {
+        font-size: $font-18+1;
+        font-family: $zilla;
+        font-style: italic;
+        color: $blue;
+      }
+    }
+  }
+
+  .qoute {
+    display: block;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      background-color: #444950;
+      width: 30px;
+      height: 1px;
+      left: 25%;
+      top: 50%;
+      @media #{$md-layout} {
+        left:15%;
+      }
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      background-color: #444950;
+      width: 30px;
+      height: 1px;
+      right: 25%;
+      top: 50%;
+      @media #{$md-layout} {
+        right: 15%
+      }
+    }
+  }
+
+  .slick-dots {
+    margin: 48px 0 10px;
+  }
+
+  .slick-dots li > button {
+    border: 1px solid $white;
+    background-color: $white;
+  }
+
+  .slick-dots li.slick-active button {
+    border: 1px solid $secondary-color;
+    background-color: $secondary-color;
+    color: $secondary-color;
+    opacity: 1;
+  }
+
+  .slick-arrow {
+    img {
+      object-fit: contain;
+      position: relative;
+
+      &:last-child {
+        opacity: 0;
+        visibility: hidden;
+        object-fit: contain;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+
+      }
+    }
+
+    &:hover {
+      img {
+        position: relative;
+
+        &:first-child {
+          opacity: 0;
+          visibility: hidden;
+          object-fit: contain;
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+
+        }
+
+        &:last-child {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+}
+
+.subscribe-banner-member {
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+
+  h3 {
+    color: $white;
+    span {
+      margin-top: 5px;
+      font-size: 12px;
+    }
+  }
+
+  p {
+    color: $gray;
+  }
+
+  i {
+    color: $white;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .tag {
+    color: $blue;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-bottom: 30px;
+    font-size: 12px;
+    font-family: $montserrat;
+    text-transform: uppercase;
+    line-height: 2.667;
+  }
+
+  figcaption {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-bottom: 50px;
+    z-index: 1;
+  }
+
+  .btn {
+    background-color: transparent;
+    color: $white;
+    &:hover {
+      background-color: $secondary-color;
+    }
+  }
+
+  .overlay {
+    background-color: rgba(27, 28, 30, 0.71);
+    opacity: 0.71;
+    position: absolute;
+    bottom: 0;
+    display: block;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

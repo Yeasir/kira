@@ -1,0 +1,73 @@
+$primary-color: #131314;
+$secondary-color: #4201ff;
+$black: #000000;
+$white: #ffffff;
+$gray-light: #5D5F66;
+$gray: #96979D;
+$whitesmoke: #F9F9FF;
+$black-light: #25262d;
+$dark: #131314;
+$dark-light: #272727;
+$blue: #6067ff;
+$orange-dark: #c25b00;
+$navy-blue: #3b5998;
+
+$zilla: 'Zilla Slab', serif;
+$red-hat: 'Red Hat Display', sans-serif;
+$montserrat: 'Montserrat', sans-serif;
+$poppins: 'Poppins',sans-serif;
+$assetPath: "../img";
+
+$font-size-base: 14px;
+$font-16: ceil($font-size-base*1.14);
+$font-18: ceil($font-size-base*1.285);
+$font-20: ceil($font-size-base*1.428);
+$font-22: ceil($font-size-base*1.571);
+$font-24: ceil($font-size-base*1.714);
+$font-26: ceil($font-size-base*1.857);
+$font-28: ceil($font-size-base*2);
+$font-30: ceil($font-size-base*2.133);
+$font-32: ceil($font-size-base*2.285);
+$font-34: ceil($font-size-base*2.428);
+$font-36: ceil($font-size-base*2.571);
+$font-38: ceil($font-size-base*2.714);
+$font-40: ceil($font-size-base*2.857);
+$font-42: ceil($font-size-base*3);
+$font-44: ceil($font-size-base*3.143);
+$font-46: ceil($font-size-base*3.285);
+$font-48: ceil($font-size-base*3.428);
+$font-50: ceil($font-size-base*3.571);
+$font-52: ceil($font-size-base*3.714);
+$font-54: ceil($font-size-base*3.857);
+$font-56: ceil($font-size-base*4);
+$font-58: ceil($font-size-base*4.143);
+$font-60: ceil($font-size-base*4.285);
+$font-65: ceil($font-size-base*4.61);
+$font-70: ceil($font-size-base*5);
+$font-75: ceil($font-size-base*5.356);
+
+
+
+$thin: 100;
+$extra-light: 200;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+$extra-bold: 800;
+$black-weight: 900;
+
+
+$xx-layout: 'only screen and (min-width: 1367px) and (max-width: 1920px)';
+$xl-layout: 'only screen and (min-width: 1200px) and (max-width: 1366px)';
+$lg-layout: 'only screen and (min-width: 992px) and (max-width: 1199px)';
+$mdu-layout: 'only screen and (max-width: 991px)';
+$md-layout: 'only screen and (min-width: 768px) and (max-width: 991px)';
+$xs-layout: 'only screen and (max-width: 767px)';
+$sm-layout: 'only screen and (min-width: 568px) and (max-width: 767px)';
+$xss-layout: 'only screen and (max-width: 480px)';
+
+@media #{$xss-layout} {
+
+}

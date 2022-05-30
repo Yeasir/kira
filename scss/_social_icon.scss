@@ -1,0 +1,32 @@
+/*============================================================================
+	#07. social icon Style
+==============================================================================*/
+.social-icon {
+  padding: 0;
+  @media #{$mdu-layout} {
+    margin: 0 !important;
+    width: 100%;
+    text-align: center;
+    .list-inline-item {
+      padding: 0 10px;
+    }
+  }
+  li {
+    &.list-inline-item:not(:last-child) {
+      margin-right: 14px;
+    }
+  }
+  li > a {
+    display: block;
+    background-color: transparent;
+    color: $white;
+    font-size: $font-20;
+    transition: all .3s ease-in;
+
+    &:hover, &:focus {
+      color: $secondary-color;
+      transition: all .3s ease-in;
+    }
+  }
+
+}

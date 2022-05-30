@@ -1,0 +1,170 @@
+/*============================================================================
+	#4. Button Style
+==============================================================================*/
+button,.btn,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  display: inline-block;
+  border: 2px solid $secondary-color;
+  box-shadow: none;
+  outline: none;
+  text-transform: uppercase;
+  background-color: transparent;
+  border-radius: 0;
+  color: $white;
+  font-size: $font-size-base;
+  font-family: $montserrat;
+  font-weight: $bold;
+  line-height: 2;
+  padding: 12px 30px;
+  transition: 0.35s ease;
+}
+
+button:hover,.btn:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  background-color: $secondary-color;
+  box-shadow: none;
+  outline: none;
+  color: $white;
+  transition: 0.35s ease;
+}
+
+button:active, button:focus, .btn:focus,.btn:focus,
+input[type="button"]:active,
+input[type="button"]:focus,
+input[type="reset"]:active,
+input[type="reset"]:focus,
+input[type="submit"]:active,
+input[type="submit"]:focus {
+  background-color: $secondary-color;
+  color: $white;
+  box-shadow: none;
+  outline: none;
+  transition: 0.35s ease;
+}
+
+.sketch--btn{
+   position: relative;
+    display: block;
+   width: 267px;
+  min-height: 40px;
+  text-align: center;
+  @media #{$xl-layout} {
+    max-width: 170px;
+  }
+  @media #{$lg-layout, $md-layout} {
+    max-width: 155px;
+  }
+
+
+   img{
+     display: inline-block;
+     max-width: 100%;
+     vertical-align: middle;
+   }
+   span {
+     position: absolute;
+     left: 0;
+     right: 0;
+     display: block;
+     bottom: 0;
+     z-index: 1;
+     font-size: $font-size-base+1;
+     font-family: $montserrat;
+     text-align: center;
+     margin-bottom: 15px;
+     font-weight: $bold;
+     top: 50%;
+     margin-top: -12px;
+     color: $black;
+   }
+
+  &:hover {
+    span{
+      color: $black;
+    }
+    img {
+      animation-name: btnsk;
+      animation-duration: 1s;
+    }
+  }
+ }
+
+
+.site-header {
+  .sketch--btn {
+    @media #{$mdu-layout} {
+      display: block;
+      margin: 10px auto 0;
+    }
+  }
+}
+
+.sketch--btn--black{
+  position: relative;
+  display: block;
+  min-height: 50px;
+  text-align: center;
+  padding-right: 120px;
+  width: 502px;
+  margin: 0 auto;
+
+  @media #{$xss-layout} {
+    padding-right: 65px;
+    width: 315px;
+  }
+  img{
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: block;
+    bottom: 0;
+    z-index: 1;
+    color: $white;
+    font-size: $font-16+1;
+    font-family: $zilla;
+    text-align: center;
+    font-weight: $bold;
+    line-height: 1.647;
+    top: 50%;
+    margin-top: -12px;
+  }
+
+  &:hover {
+    span{
+      color: $white;
+    }
+    img {
+      animation-name: btnsk;
+      animation-duration: 0.5s;
+    }
+  }
+}
+
+.read-more-btn{
+  font-size: 10px;
+  font-family: $montserrat;
+  color: $blue;
+  text-transform: uppercase;
+  line-height: 3.2;
+  letter-spacing: 0.2em;
+  i{
+    margin-left: 7px;
+  }
+  &:hover{
+    color: $primary-color;
+  }
+}
+
+@keyframes btnsk {
+  from {width: 90%;}
+  to {width: 100%;}
+}

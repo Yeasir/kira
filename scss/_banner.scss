@@ -1,0 +1,53 @@
+/*============================================================================
+	#09. banner style
+==============================================================================*/
+.hero-banner{
+  //padding: 350px 0 550px 0;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  //@media #{$lg-layout, $md-layout, $xs-layout} {
+  //  padding: 250px 0 230px 0;
+  //}
+  img.banner-img{
+    @media #{ $xs-layout} {
+     min-height: 700px;
+    }
+
+  }
+  .caption{
+    max-width: 670px;
+    position: absolute;
+    top: 25%;
+    left: 11%;
+    @media #{ $xs-layout} {
+      left: 0%;
+      padding:0 15px;
+    }
+    @media #{ $lg-layout} {
+      max-width: 757px;
+    }
+    h1{
+      margin-bottom: 75px;
+      @media #{ $sm-layout} {
+        font-size: 50px;
+      }
+      @media #{ $xss-layout} {
+        font-size: 30px;
+      }
+    }
+    a.btn{
+      @media #{$xss-layout} {
+       display: block;
+        margin-right: 0 !important;
+        margin-bottom: 30px;
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
+    }
+
+  }
+}

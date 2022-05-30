@@ -1,0 +1,51 @@
+/*============================================================================
+	 Template Name: Kira
+     Version: 1
+     CSS INDEX
+==============================================================================
+
+    #00. Normalize or reset css
+    #01. Document Setup
+    #02. Typography
+    #03. Element Base
+    #04. Button Style
+    #05. Form Input Style
+    #06. Slick slider style
+    #07. social icon Style
+    #08. Header and menu style
+    #09. banner style
+    #10. Welcome style
+    #11. blog style
+    #12. sidebar Style
+    #13. podcast Style
+    #14. Featured style
+    #15. Testimonial style
+    #16. Social media Style
+    #17. Subscribe style
+    #18. members style
+    #19. Need help style
+    #20. story style
+    #21.footer-style
+
+==============================================================================*/
+@import 'variabls';
+@import 'common';
+@import "button";
+@import "input";
+@import 'slick';
+@import "social_icon";
+@import "mobile_menu";
+@import 'header';
+@import "banner";
+@import "welcome";
+@import "blog";
+@import "sidebar";
+@import "podcast";
+@import "featured";
+@import "testimonial";
+@import "socila_media";
+@import "subscribe";
+@import "members";
+@import "need_help";
+@import "story";
+@import 'footer';

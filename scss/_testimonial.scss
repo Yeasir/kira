@@ -1,0 +1,111 @@
+/*============================================================================
+	#15. Testimonial style
+==============================================================================*/
+.testimonials{
+  position: relative;
+  padding: 240px 0;
+  overflow: hidden;
+  @media #{$lg-layout, $md-layout, $xs-layout} {
+    padding:200px 0;
+  }
+  background:url('#{$assetPath}/bg/testimonial-bg.png') no-repeat center center;
+  background-size: cover;
+  @media #{$xl-layout} {
+    padding: 100px 0;
+  }
+  .section-title{
+    color: $white;
+  }
+  .slick-slide img {
+    display: block;
+    margin: 0 auto;
+  }
+  blockquote{
+    max-width: 840px;
+    @media #{ $xs-layout} {
+      max-width: 500px;
+    }
+    @media #{$xss-layout} {
+      width: 280px;
+    }
+    margin: 0 auto;
+   color: $gray;
+    font-size: $font-18+1;
+    font-family: $zilla;
+    font-style: italic;
+    line-height: 1.474;
+    text-align: center;
+    footer{
+      margin-top: 35px;
+      h6{
+        font-size: $font-18+1;
+        font-family: $zilla;
+        font-style: italic;
+        color: $blue;
+      }
+    }
+  }
+  .qoute{
+    display: block;
+   position: relative;
+     &:before{
+       content: '';
+       position: absolute;
+       background-color: #444950;
+       width: 30px;
+       height: 1px;
+       left: 40%;
+       top: 50%;
+       @media #{$xs-layout} {
+         left: 20%
+       }
+     }
+    &:after{
+      content: '';
+      position: absolute;
+      background-color: #444950;
+      width: 30px;
+      height: 1px;
+      right: 40%;
+      top: 50%;
+      @media #{$xs-layout} {
+        right: 20%
+      }
+    }
+  }
+  .slick-arrow{
+    img{
+      object-fit: contain;
+      position: relative;
+      &:last-child{
+        opacity: 0;
+        visibility: hidden;
+        object-fit: contain;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+
+      }
+    }
+    &:hover{
+      img{
+        position: relative;
+        &:first-child{
+          opacity: 0;
+          visibility: hidden;
+          object-fit: contain;
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+
+        }
+        &:last-child{
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+}

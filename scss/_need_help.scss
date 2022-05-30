@@ -1,0 +1,116 @@
+/*============================================================================
+	#19. Need help style
+==============================================================================*/
+.need-help__banner{
+  position: relative;
+  padding-top: 10px;
+  @media #{$lg-layout, $xs-layout} {
+    padding-top: 150px;
+    padding-bottom: 50px;
+  }
+  @media #{$md-layout} {
+    padding-top: 150px;
+    padding-bottom: 90px;
+  }
+  .banner-caption{
+    margin-left: 22%;
+    @media #{$lg-layout} {
+      margin-left: 10%;
+    }
+    @media #{$md-layout} {
+      margin-left: 5%;
+      margin-bottom: 40px;
+    }
+    @media #{ $xs-layout} {
+      text-align: center;
+      margin-left: 0;
+      margin-bottom: 40px;
+
+    }
+    h1{
+      font-weight: $black-weight;
+      font-size: 100px;
+      text-transform: uppercase;
+      line-height: 1;
+      @media #{$md-layout, $xs-layout} {
+        font-size: 75px;
+      }
+    }
+    span{
+      font-size: 16px;
+    }
+    .amount{
+      font-size: $font-30;
+      color: $secondary-color;
+    }
+  }
+  .btn, input[type='button']{
+    background-color: transparent;
+    color: $dark;
+    &:hover{
+      color: $white;
+      background-color: $secondary-color;
+    }
+  }
+  .sketch--btn--black{
+    position: absolute;
+    width: 30%;
+    margin: 0 auto;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    overflow: hidden;
+    @media #{ $xs-layout} {
+      width: 100%;
+      bottom: 7%;
+    }
+     span {
+      bottom: 68%;
+    }
+    img{
+      margin: 0 auto;
+      &:first-child{
+        margin: 0px auto 0 40px;
+        @media #{$xl-layout} {
+          margin: 0px auto 0 -50px;
+        }
+        @media #{$lg-layout} {
+          margin: 0px auto 0 -40px;
+        }
+        @media #{ $sm-layout} {
+          margin: 0px auto 0 75px;
+        }
+        @media #{$md-layout} {
+          margin: 0px auto 0 -20px;
+        }
+      }
+    }
+    img.bottom-arrow{
+      margin-top: -28px !important;
+    }
+
+  }
+}
+.need-help__content{
+  position: relative;
+  padding: 130px 0 170px 0;
+  background:url('#{$assetPath}/bg/bg.png') no-repeat center center;
+  background-size: cover;
+  @media #{$lg-layout, $md-layout, $xs-layout} {
+    padding: 50px 0 100px 0;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    background: url('#{$assetPath}/bg/bg-line.png') no-repeat top center;
+    background-size: cover;
+    width: 100%;
+    height: 115px;
+    top: -10%;
+    left: 0;
+    @media #{$xss-layout} {
+      top: -5%;
+    }
+  }
+}

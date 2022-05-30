@@ -1,0 +1,45 @@
+/*============================================================================
+	#16. Social media Style
+==============================================================================*/
+.social-media{
+  position: relative;
+  padding: 130px 0;
+  @media #{$lg-layout, $md-layout, $xs-layout} {
+    padding: 80px 0;
+  }
+  .section-title{
+    font-size: $font-60;
+    letter-spacing: 0em;
+
+    @media #{ $md-layout} {
+      font-size: $font-50;
+    }
+    @media #{ $xs-layout} {
+      font-size: $font-40;
+    }
+  }
+  .social-media-link{
+    .social-media-item{
+      margin-bottom: 60px;
+      margin-top: 0px;
+    }
+    .social-media-item>a{
+      position: relative;
+      font-size: 30px;
+      color: $white;
+      &:hover{
+        color: $secondary-color;
+      }
+      img{
+        max-width: 150px;
+      }
+      i{
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+        top: 0;
+      }
+    }
+  }
+}
